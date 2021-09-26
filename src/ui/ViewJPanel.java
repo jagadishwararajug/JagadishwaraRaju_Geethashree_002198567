@@ -54,23 +54,23 @@ public class ViewJPanel extends javax.swing.JPanel {
         lblIpAdd = new javax.swing.JLabel();
         lblPhoto = new javax.swing.JLabel();
         lblUniqueId = new javax.swing.JLabel();
-        txtName = new javax.swing.JTextField();
-        txtDob = new javax.swing.JTextField();
-        txtGeoData = new javax.swing.JTextField();
-        txtFaxNum = new javax.swing.JTextField();
-        txtTelNum = new javax.swing.JTextField();
-        txtEmailId = new javax.swing.JTextField();
-        txtSsn = new javax.swing.JTextField();
-        txtMedRecNum = new javax.swing.JTextField();
-        txtHlthPlnBenNum = new javax.swing.JTextField();
-        txtBnkAccNum = new javax.swing.JTextField();
-        txtCrtLicNum = new javax.swing.JTextField();
-        txtVclIdSlNumIncLicPl = new javax.swing.JTextField();
-        txtDevIdSlNum = new javax.swing.JTextField();
-        txtLinkedin = new javax.swing.JTextField();
-        txtIpAdd = new javax.swing.JTextField();
-        txtUniqueId = new javax.swing.JTextField();
         imageLabel = new javax.swing.JLabel();
+        txtName = new javax.swing.JLabel();
+        txtGeoData = new javax.swing.JLabel();
+        txtDob = new javax.swing.JLabel();
+        txtTelNum = new javax.swing.JLabel();
+        txtFaxNum = new javax.swing.JLabel();
+        txtEmailId = new javax.swing.JLabel();
+        txtSsn = new javax.swing.JLabel();
+        txtMedRecNum = new javax.swing.JLabel();
+        txtHlthPlnBenNum = new javax.swing.JLabel();
+        txtBnkAccNum = new javax.swing.JLabel();
+        txtCrtLicNum = new javax.swing.JLabel();
+        txtVclIdSlNumIncLicPl = new javax.swing.JLabel();
+        txtDevIdSlNum = new javax.swing.JLabel();
+        txtLinkedin = new javax.swing.JLabel();
+        txtIpAdd = new javax.swing.JLabel();
+        txtUniqueId = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
 
@@ -112,301 +112,175 @@ public class ViewJPanel extends javax.swing.JPanel {
 
         lblUniqueId.setText("Unique ID:");
 
-        txtName.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNameActionPerformed(evt);
-            }
-        });
+        txtName.setText("jLabel2");
 
-        txtDob.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtDobActionPerformed(evt);
-            }
-        });
+        txtGeoData.setText("jLabel2");
 
-        txtGeoData.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtGeoDataActionPerformed(evt);
-            }
-        });
+        txtDob.setText("jLabel2");
 
-        txtFaxNum.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFaxNumActionPerformed(evt);
-            }
-        });
+        txtTelNum.setText("jLabel2");
 
-        txtTelNum.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtTelNumActionPerformed(evt);
-            }
-        });
+        txtFaxNum.setText("jLabel2");
 
-        txtEmailId.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtEmailIdActionPerformed(evt);
-            }
-        });
+        txtEmailId.setText("jLabel2");
 
-        txtSsn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtSsnActionPerformed(evt);
-            }
-        });
+        txtSsn.setText("jLabel2");
 
-        txtMedRecNum.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtMedRecNumActionPerformed(evt);
-            }
-        });
+        txtMedRecNum.setText("jLabel2");
 
-        txtHlthPlnBenNum.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtHlthPlnBenNumActionPerformed(evt);
-            }
-        });
+        txtHlthPlnBenNum.setText("jLabel2");
 
-        txtBnkAccNum.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtBnkAccNumActionPerformed(evt);
-            }
-        });
+        txtBnkAccNum.setText("jLabel2");
 
-        txtCrtLicNum.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCrtLicNumActionPerformed(evt);
-            }
-        });
+        txtCrtLicNum.setText("jLabel2");
 
-        txtVclIdSlNumIncLicPl.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtVclIdSlNumIncLicPlActionPerformed(evt);
-            }
-        });
+        txtVclIdSlNumIncLicPl.setText("jLabel2");
 
-        txtDevIdSlNum.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtDevIdSlNumActionPerformed(evt);
-            }
-        });
+        txtDevIdSlNum.setText("jLabel2");
 
-        txtLinkedin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLinkedinActionPerformed(evt);
-            }
-        });
+        txtLinkedin.setText("jLabel2");
 
-        txtIpAdd.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtIpAddActionPerformed(evt);
-            }
-        });
+        txtIpAdd.setText("jLabel2");
 
-        txtUniqueId.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtUniqueIdActionPerformed(evt);
-            }
-        });
+        txtUniqueId.setText("jLabel2");
+        txtUniqueId.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(131, 131, 131)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblPhoto)
-                    .addComponent(lblUniqueId))
-                .addGap(41, 41, 41)
+                .addGap(15, 15, 15)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtUniqueId, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(imageLabel))
-                .addContainerGap(55, Short.MAX_VALUE))
+                    .addComponent(lblVclIdSlNumIncLicPl)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblTelNum)
+                            .addComponent(lblPhoto)
+                            .addComponent(lblUniqueId)
+                            .addComponent(lblFaxNum)
+                            .addComponent(lblEmailId)
+                            .addComponent(lblSsn)
+                            .addComponent(lblMedRecNum)
+                            .addComponent(lblHlthPlnBenNum)
+                            .addComponent(lblBnkAccNum)
+                            .addComponent(lblCrtLicNum)
+                            .addComponent(lblDevIdSlNum)
+                            .addComponent(lblLinkedin)
+                            .addComponent(lblIpAdd)
+                            .addComponent(lblDob)
+                            .addComponent(lblGeoData)
+                            .addComponent(lblName))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(45, 45, 45)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(txtUniqueId, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(txtGeoData, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtDob, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtTelNum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtFaxNum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtEmailId, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtMedRecNum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtHlthPlnBenNum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtBnkAccNum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtCrtLicNum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtVclIdSlNumIncLicPl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtDevIdSlNum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtLinkedin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtIpAdd, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtSsn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(94, 94, 94)
+                                .addComponent(imageLabel)))))
+                .addGap(103, 305, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addContainerGap()
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(lblSsn)
-                                .addComponent(lblIpAdd)
-                                .addComponent(lblLinkedin)
-                                .addComponent(lblDevIdSlNum)
-                                .addComponent(lblVclIdSlNumIncLicPl)
-                                .addComponent(lblCrtLicNum)
-                                .addComponent(lblName)
-                                .addComponent(lblMedRecNum)
-                                .addComponent(lblHlthPlnBenNum)
-                                .addComponent(lblEmailId)
-                                .addComponent(lblFaxNum)
-                                .addComponent(lblTelNum)
-                                .addComponent(lblDob)
-                                .addComponent(lblGeoData)
-                                .addComponent(lblBnkAccNum))
-                            .addGap(41, 41, 41)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(txtLinkedin)
-                                .addComponent(txtDevIdSlNum)
-                                .addComponent(txtVclIdSlNumIncLicPl)
-                                .addComponent(txtCrtLicNum)
-                                .addComponent(txtBnkAccNum)
-                                .addComponent(txtHlthPlnBenNum)
-                                .addComponent(txtMedRecNum)
-                                .addComponent(txtSsn)
-                                .addComponent(txtEmailId)
-                                .addComponent(txtFaxNum)
-                                .addComponent(txtTelNum)
-                                .addComponent(txtIpAdd, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(txtGeoData)
-                                .addComponent(txtDob))
-                            .addGap(24, 24, 24)))
+                    .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addContainerGap()))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(466, Short.MAX_VALUE)
+                .addGap(38, 38, 38)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtUniqueId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblUniqueId))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(txtName)
+                    .addComponent(lblName))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtGeoData)
+                    .addComponent(lblGeoData))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtDob)
+                    .addComponent(lblDob))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtTelNum)
+                    .addComponent(lblTelNum))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblFaxNum)
+                    .addComponent(txtFaxNum))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtEmailId)
+                    .addComponent(lblEmailId))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtSsn, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblSsn))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblMedRecNum)
+                    .addComponent(txtMedRecNum))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtHlthPlnBenNum)
+                    .addComponent(lblHlthPlnBenNum))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtBnkAccNum)
+                    .addComponent(lblBnkAccNum))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtCrtLicNum)
+                    .addComponent(lblCrtLicNum))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblVclIdSlNumIncLicPl)
+                    .addComponent(txtVclIdSlNumIncLicPl))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblDevIdSlNum)
+                    .addComponent(txtDevIdSlNum))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtLinkedin)
+                    .addComponent(lblLinkedin))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtIpAdd)
+                    .addComponent(lblIpAdd))
+                .addGap(8, 8, 8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblUniqueId)
+                    .addComponent(txtUniqueId))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblPhoto)
                     .addComponent(imageLabel))
-                .addGap(40, 40, 40))
+                .addContainerGap(37, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(lblTitle)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblName)
-                        .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblGeoData)
-                        .addComponent(txtGeoData, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblDob)
-                        .addComponent(txtDob, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(6, 6, 6)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblTelNum)
-                        .addComponent(txtTelNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblFaxNum)
-                        .addComponent(txtFaxNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(6, 6, 6)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblEmailId)
-                        .addComponent(txtEmailId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblSsn)
-                        .addComponent(txtSsn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblMedRecNum)
-                        .addComponent(txtMedRecNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblHlthPlnBenNum)
-                        .addComponent(txtHlthPlnBenNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblBnkAccNum)
-                        .addComponent(txtBnkAccNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblCrtLicNum)
-                        .addComponent(txtCrtLicNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblVclIdSlNumIncLicPl)
-                        .addComponent(txtVclIdSlNumIncLicPl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblDevIdSlNum)
-                        .addComponent(txtDevIdSlNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblLinkedin)
-                        .addComponent(txtLinkedin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblIpAdd)
-                        .addComponent(txtIpAdd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addContainerGap(128, Short.MAX_VALUE)))
+                    .addContainerGap(379, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNameActionPerformed
-
-    private void txtDobActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDobActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtDobActionPerformed
-
-    private void txtGeoDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGeoDataActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtGeoDataActionPerformed
-
-    private void txtFaxNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFaxNumActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtFaxNumActionPerformed
-
-    private void txtTelNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelNumActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtTelNumActionPerformed
-
-    private void txtEmailIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailIdActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtEmailIdActionPerformed
-
-    private void txtSsnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSsnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtSsnActionPerformed
-
-    private void txtMedRecNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMedRecNumActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtMedRecNumActionPerformed
-
-    private void txtHlthPlnBenNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHlthPlnBenNumActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtHlthPlnBenNumActionPerformed
-
-    private void txtBnkAccNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBnkAccNumActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtBnkAccNumActionPerformed
-
-    private void txtCrtLicNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCrtLicNumActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtCrtLicNumActionPerformed
-
-    private void txtVclIdSlNumIncLicPlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtVclIdSlNumIncLicPlActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtVclIdSlNumIncLicPlActionPerformed
-
-    private void txtDevIdSlNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDevIdSlNumActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtDevIdSlNumActionPerformed
-
-    private void txtLinkedinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLinkedinActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtLinkedinActionPerformed
-
-    private void txtIpAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIpAddActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtIpAddActionPerformed
-
-    private void txtUniqueIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUniqueIdActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtUniqueIdActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -430,22 +304,22 @@ public class ViewJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel lblTitle;
     private javax.swing.JLabel lblUniqueId;
     private javax.swing.JLabel lblVclIdSlNumIncLicPl;
-    private javax.swing.JTextField txtBnkAccNum;
-    private javax.swing.JTextField txtCrtLicNum;
-    private javax.swing.JTextField txtDevIdSlNum;
-    private javax.swing.JTextField txtDob;
-    private javax.swing.JTextField txtEmailId;
-    private javax.swing.JTextField txtFaxNum;
-    private javax.swing.JTextField txtGeoData;
-    private javax.swing.JTextField txtHlthPlnBenNum;
-    private javax.swing.JTextField txtIpAdd;
-    private javax.swing.JTextField txtLinkedin;
-    private javax.swing.JTextField txtMedRecNum;
-    private javax.swing.JTextField txtName;
-    private javax.swing.JTextField txtSsn;
-    private javax.swing.JTextField txtTelNum;
-    private javax.swing.JTextField txtUniqueId;
-    private javax.swing.JTextField txtVclIdSlNumIncLicPl;
+    private javax.swing.JLabel txtBnkAccNum;
+    private javax.swing.JLabel txtCrtLicNum;
+    private javax.swing.JLabel txtDevIdSlNum;
+    private javax.swing.JLabel txtDob;
+    private javax.swing.JLabel txtEmailId;
+    private javax.swing.JLabel txtFaxNum;
+    private javax.swing.JLabel txtGeoData;
+    private javax.swing.JLabel txtHlthPlnBenNum;
+    private javax.swing.JLabel txtIpAdd;
+    private javax.swing.JLabel txtLinkedin;
+    private javax.swing.JLabel txtMedRecNum;
+    private javax.swing.JLabel txtName;
+    private javax.swing.JLabel txtSsn;
+    private javax.swing.JLabel txtTelNum;
+    private javax.swing.JLabel txtUniqueId;
+    private javax.swing.JLabel txtVclIdSlNumIncLicPl;
     // End of variables declaration//GEN-END:variables
 
     private void displayProfile() {
@@ -471,6 +345,6 @@ public class ViewJPanel extends javax.swing.JPanel {
         
         imageLabel.setIcon(new ImageIcon(new ImageIcon(
                 profile.getImage().toString()).getImage(
-                ).getScaledInstance(75, 75, Image.SCALE_DEFAULT)));
+                ).getScaledInstance(200, 200, Image.SCALE_DEFAULT)));
     }
 }
