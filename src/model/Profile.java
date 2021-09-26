@@ -56,7 +56,7 @@ public class Profile {
         if (geoData==null || geoData.equals("")){
             return false;
         }
-        if(geoData.matches("[a-zA-Z0-9.,#-]+")){
+        if(geoData.matches("[a-zA-Z0-9.,#\\- ]+")){
             this.geoData = geoData;
             return true;
         }

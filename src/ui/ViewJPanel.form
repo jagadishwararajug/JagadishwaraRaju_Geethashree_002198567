@@ -25,20 +25,16 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="lblPhoto" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                      <Component id="imageLabel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="lblUniqueId" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                      <Component id="txtUniqueId" pref="321" max="32767" attributes="0"/>
-                  </Group>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="lblPhoto" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblUniqueId" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="txtUniqueId" min="-2" pref="288" max="-2" attributes="0"/>
+                  <Component id="imageLabel" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="55" max="32767" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
@@ -65,25 +61,23 @@
                           </Group>
                           <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtBnkAccNum" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtCrtLicNum" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtVclIdSlNumIncLicPl" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtDevIdSlNum" alignment="0" max="32767" attributes="0"/>
                               <Component id="txtLinkedin" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtIpAdd" alignment="0" max="32767" attributes="0"/>
+                              <Component id="txtDevIdSlNum" alignment="0" max="32767" attributes="0"/>
+                              <Component id="txtVclIdSlNumIncLicPl" alignment="0" max="32767" attributes="0"/>
+                              <Component id="txtCrtLicNum" alignment="0" max="32767" attributes="0"/>
+                              <Component id="txtBnkAccNum" alignment="0" max="32767" attributes="0"/>
                               <Component id="txtHlthPlnBenNum" alignment="0" max="32767" attributes="0"/>
                               <Component id="txtMedRecNum" alignment="0" max="32767" attributes="0"/>
                               <Component id="txtSsn" alignment="0" max="32767" attributes="0"/>
                               <Component id="txtEmailId" alignment="0" max="32767" attributes="0"/>
                               <Component id="txtFaxNum" alignment="0" max="32767" attributes="0"/>
                               <Component id="txtTelNum" alignment="0" max="32767" attributes="0"/>
-                              <Group type="102" attributes="0">
-                                  <Component id="txtName" min="-2" pref="322" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
+                              <Component id="txtIpAdd" alignment="1" max="32767" attributes="0"/>
+                              <Component id="txtName" min="-2" pref="304" max="-2" attributes="0"/>
                               <Component id="txtGeoData" alignment="0" max="32767" attributes="0"/>
                               <Component id="txtDob" alignment="0" max="32767" attributes="0"/>
                           </Group>
+                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -94,17 +88,17 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="429" max="32767" attributes="0"/>
+              <EmptySpace pref="466" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="txtUniqueId" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lblUniqueId" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblPhoto" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="imageLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblPhoto" min="-2" max="-2" attributes="0"/>
+                  <Component id="imageLabel" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
@@ -367,9 +361,6 @@
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="imageLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="img"/>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>

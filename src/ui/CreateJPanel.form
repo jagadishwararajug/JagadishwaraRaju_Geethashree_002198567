@@ -43,14 +43,13 @@
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="txtBnkAccNum" max="32767" attributes="0"/>
-                  <Component id="txtCrtLicNum" max="32767" attributes="0"/>
-                  <Component id="txtVclIdSlNumIncLicPl" max="32767" attributes="0"/>
-                  <Component id="txtDevIdSlNum" max="32767" attributes="0"/>
-                  <Component id="txtLinkedin" max="32767" attributes="0"/>
-                  <Component id="txtIpAdd" max="32767" attributes="0"/>
-                  <Component id="txtUniqueId" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="txtIpAdd" alignment="0" pref="276" max="32767" attributes="0"/>
+                  <Component id="txtLinkedin" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtDevIdSlNum" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtVclIdSlNumIncLicPl" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtCrtLicNum" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtBnkAccNum" alignment="0" max="32767" attributes="0"/>
                   <Component id="txtHlthPlnBenNum" alignment="0" max="32767" attributes="0"/>
                   <Component id="txtMedRecNum" alignment="0" max="32767" attributes="0"/>
                   <Component id="txtSsn" alignment="0" max="32767" attributes="0"/>
@@ -58,21 +57,17 @@
                   <Component id="txtFaxNum" alignment="0" max="32767" attributes="0"/>
                   <Component id="txtTelNum" alignment="0" max="32767" attributes="0"/>
                   <Component id="txtDob" alignment="0" max="32767" attributes="0"/>
-                  <Component id="txtName" alignment="0" max="32767" attributes="0"/>
                   <Component id="txtGeoData" alignment="0" max="32767" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btnSave" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="pickFileButton" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="pickedFileLabel" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="0" pref="229" max="32767" attributes="0"/>
+                  <Component id="btnSave" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="pickFileButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="pickedFileLabel" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="txtName" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtUniqueId" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace pref="36" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
