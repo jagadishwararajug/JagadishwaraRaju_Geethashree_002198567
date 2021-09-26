@@ -22,7 +22,7 @@ public class MainJFrame extends javax.swing.JFrame {
     public MainJFrame() {
         initComponents();
         profile = new Profile();
-        
+        setSize(800, 600);
     }
 
     /**
