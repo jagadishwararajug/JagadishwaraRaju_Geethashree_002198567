@@ -124,7 +124,7 @@ public class Profile {
         if(faxNum == null || faxNum.equals("")){
             return false;
         }
-        if(faxNum.matches("[0-9]+")){
+        if(faxNum.matches("\\+?[0-9]+")){
             this.faxNum = faxNum;
             return true;
         }
