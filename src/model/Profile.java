@@ -139,7 +139,7 @@ public class Profile {
         if(emailId == null || emailId.equals("")){
             return false;
         }
-        if(emailId.matches("[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+")){
+        if(emailId.matches("[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\\.[a-zA-Z0-9.-]+")){
             this.emailId = emailId;
             return true;
         }
