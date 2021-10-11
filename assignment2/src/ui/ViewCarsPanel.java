@@ -20,6 +20,8 @@ public class ViewCarsPanel extends javax.swing.JPanel {
         initComponents();
         this.uber = uber;
         populateTable(this.uber.getAllCars());
+        carsTable.setShowHorizontalLines(true);
+        carsTable.setShowVerticalLines(true);
     }
     
     private void populateTable(List<Car> cars) {
@@ -80,10 +82,14 @@ public class ViewCarsPanel extends javax.swing.JPanel {
         cityButton = new javax.swing.JButton();
         expiredLicenseButton = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(253, 253, 223));
+
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("View Cars");
 
+        carsTable.setBackground(new java.awt.Color(253, 253, 223));
+        carsTable.setBorder(new javax.swing.border.MatteBorder(null));
         carsTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null, null, null},
@@ -105,6 +111,8 @@ public class ViewCarsPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(carsTable);
 
+        availCarsButton.setBackground(new java.awt.Color(38, 55, 85));
+        availCarsButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         availCarsButton.setText("Find First Available Passenger Car");
         availCarsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,6 +120,8 @@ public class ViewCarsPanel extends javax.swing.JPanel {
             }
         });
 
+        allCarsButton.setBackground(new java.awt.Color(38, 55, 85));
+        allCarsButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         allCarsButton.setText("Find All Available Cars");
         allCarsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,6 +129,8 @@ public class ViewCarsPanel extends javax.swing.JPanel {
             }
         });
 
+        allUnavailButton.setBackground(new java.awt.Color(38, 55, 85));
+        allUnavailButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         allUnavailButton.setText("Find All Unavailable Cars");
         allUnavailButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,6 +138,8 @@ public class ViewCarsPanel extends javax.swing.JPanel {
             }
         });
 
+        findManufacturerButton.setBackground(new java.awt.Color(38, 55, 85));
+        findManufacturerButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         findManufacturerButton.setText("Find Cars From Manufacturer");
         findManufacturerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,6 +153,8 @@ public class ViewCarsPanel extends javax.swing.JPanel {
             }
         });
 
+        manufacturerYearButton.setBackground(new java.awt.Color(38, 55, 85));
+        manufacturerYearButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         manufacturerYearButton.setText("Find Cars Manufactured in Year");
         manufacturerYearButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,6 +166,8 @@ public class ViewCarsPanel extends javax.swing.JPanel {
 
         jLabel3.setText("Max Seats: ");
 
+        seatsFindButton.setBackground(new java.awt.Color(38, 55, 85));
+        seatsFindButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         seatsFindButton.setText("Find Cars With Specified Number of Seats");
         seatsFindButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,6 +175,8 @@ public class ViewCarsPanel extends javax.swing.JPanel {
             }
         });
 
+        serialNumButton.setBackground(new java.awt.Color(38, 55, 85));
+        serialNumButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         serialNumButton.setText("Find Cars with Serial Number");
         serialNumButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -164,6 +184,8 @@ public class ViewCarsPanel extends javax.swing.JPanel {
             }
         });
 
+        modelNumButton.setBackground(new java.awt.Color(38, 55, 85));
+        modelNumButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         modelNumButton.setText("Find Cars with Model Number");
         modelNumButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,6 +193,8 @@ public class ViewCarsPanel extends javax.swing.JPanel {
             }
         });
 
+        allManuButton.setBackground(new java.awt.Color(38, 55, 85));
+        allManuButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         allManuButton.setText("Get All Car Manufacturers in Uber");
         allManuButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,6 +202,8 @@ public class ViewCarsPanel extends javax.swing.JPanel {
             }
         });
 
+        lastUpdateButton.setBackground(new java.awt.Color(38, 55, 85));
+        lastUpdateButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lastUpdateButton.setText("Get last catalog update time");
         lastUpdateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -185,6 +211,8 @@ public class ViewCarsPanel extends javax.swing.JPanel {
             }
         });
 
+        cityButton.setBackground(new java.awt.Color(38, 55, 85));
+        cityButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         cityButton.setText("Get cars in specified city");
         cityButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -192,6 +220,8 @@ public class ViewCarsPanel extends javax.swing.JPanel {
             }
         });
 
+        expiredLicenseButton.setBackground(new java.awt.Color(38, 55, 85));
+        expiredLicenseButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         expiredLicenseButton.setText("List cars with expired license certificates");
         expiredLicenseButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -213,7 +243,6 @@ public class ViewCarsPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 584, Short.MAX_VALUE)
                             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(findManufacturerText, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -233,7 +262,7 @@ public class ViewCarsPanel extends javax.swing.JPanel {
                                         .addComponent(maxSeatsText, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(seatsFindButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(seatsFindButton, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
                                     .addComponent(manufacturerYearButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(serialNumText, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -249,6 +278,7 @@ public class ViewCarsPanel extends javax.swing.JPanel {
                                 .addComponent(cityButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addComponent(expiredLicenseButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -296,7 +326,7 @@ public class ViewCarsPanel extends javax.swing.JPanel {
                     .addComponent(cityButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(expiredLicenseButton)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

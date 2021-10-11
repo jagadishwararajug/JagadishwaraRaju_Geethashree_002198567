@@ -73,6 +73,8 @@ public class AddCarPanel extends javax.swing.JPanel {
 
         jTextField1.setText("jTextField1");
 
+        setBackground(new java.awt.Color(253, 253, 223));
+
         jLabel1.setText("Car Type");
 
         carTypeGroup.add(passengerRadioButton);
@@ -149,6 +151,8 @@ public class AddCarPanel extends javax.swing.JPanel {
 
         validTillText.setToolTipText("yyyy-MM-dd HH:mm:ss");
 
+        saveButton.setBackground(new java.awt.Color(38, 55, 85));
+        saveButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         saveButton.setText("Save");
         saveButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -36,6 +36,8 @@ public class UberApp extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        leftPanel.setBackground(new java.awt.Color(253, 253, 223));
+
         javax.swing.GroupLayout leftPanelLayout = new javax.swing.GroupLayout(leftPanel);
         leftPanel.setLayout(leftPanelLayout);
         leftPanelLayout.setHorizontalGroup(
@@ -49,6 +51,10 @@ public class UberApp extends javax.swing.JFrame {
 
         splitPanel.setRightComponent(leftPanel);
 
+        rightPanel.setBackground(new java.awt.Color(253, 253, 223));
+
+        addCarsButton.setBackground(new java.awt.Color(38, 55, 85));
+        addCarsButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         addCarsButton.setText("Add Car");
         addCarsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -56,6 +62,8 @@ public class UberApp extends javax.swing.JFrame {
             }
         });
 
+        updateCarsButton.setBackground(new java.awt.Color(38, 55, 85));
+        updateCarsButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         updateCarsButton.setText("Update Cars");
         updateCarsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,6 +71,8 @@ public class UberApp extends javax.swing.JFrame {
             }
         });
 
+        viewCarsButton.setBackground(new java.awt.Color(38, 55, 85));
+        viewCarsButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         viewCarsButton.setText("View Cars");
         viewCarsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

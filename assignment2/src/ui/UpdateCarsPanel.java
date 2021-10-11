@@ -21,6 +21,8 @@ public class UpdateCarsPanel extends javax.swing.JPanel {
         initComponents();
         this.currentCarIndex = -1;
         this.uber = uber;
+        carsTable.setShowHorizontalLines(true);
+        carsTable.setShowVerticalLines(true);
         populateTable(this.uber);
     }
 
@@ -79,6 +81,9 @@ public class UpdateCarsPanel extends javax.swing.JPanel {
 
         jLabel1.setText("jLabel1");
 
+        setBackground(new java.awt.Color(253, 253, 223));
+
+        carsTable.setBackground(new java.awt.Color(253, 253, 223));
         carsTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null, null, null},
@@ -98,12 +103,15 @@ public class UpdateCarsPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
+        carsTable.setGridColor(new java.awt.Color(102, 102, 102));
         jScrollPane1.setViewportView(carsTable);
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Update Cars");
 
+        deleteButton.setBackground(new java.awt.Color(38, 55, 85));
+        deleteButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         deleteButton.setText("Delete");
         deleteButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,6 +119,8 @@ public class UpdateCarsPanel extends javax.swing.JPanel {
             }
         });
 
+        updateButton.setBackground(new java.awt.Color(38, 55, 85));
+        updateButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         updateButton.setText("Update");
         updateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -190,6 +200,8 @@ public class UpdateCarsPanel extends javax.swing.JPanel {
 
         validFromText.setToolTipText("yyyy-MM-dd HH:mm:ss");
 
+        viewButton.setBackground(new java.awt.Color(38, 55, 85));
+        viewButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         viewButton.setText("View");
         viewButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -271,7 +283,7 @@ public class UpdateCarsPanel extends javax.swing.JPanel {
                                     .addComponent(certNumText)
                                     .addComponent(validFromText)
                                     .addComponent(validTillText, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 155, Short.MAX_VALUE)))
+                        .addGap(0, 189, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
