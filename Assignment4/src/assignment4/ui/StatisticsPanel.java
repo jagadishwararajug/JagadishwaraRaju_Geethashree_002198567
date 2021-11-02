@@ -25,6 +25,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
     private ArrayList<Community> comms;
     private Community selectedCommunity;
     
+    
     public boolean isBloodPressureNormal(int age, float dbp, float sbp) {
         if (age < 0 || age > 150 || dbp < 0 || sbp < 0) {
             return false; //invalid input
@@ -177,7 +178,8 @@ public class StatisticsPanel extends javax.swing.JPanel {
         
         for(String com : commNames)
             communityCBox.addItem(com);
-        
+        encounterTable.setShowHorizontalLines(true);
+        encounterTable.setShowVerticalLines(true);
     }
 
     /**
@@ -199,6 +201,8 @@ public class StatisticsPanel extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         feverText = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(253, 253, 223));
+
         communityCBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 communityCBoxActionPerformed(evt);
@@ -207,6 +211,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
 
         jLabel1.setText("Number  of patients with abnormal blood pressure = ");
 
+        encounterTable.setBackground(new java.awt.Color(253, 253, 223));
         encounterTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null},
@@ -235,6 +240,9 @@ public class StatisticsPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(encounterTable);
 
+        bpButton.setBackground(new java.awt.Color(38, 55, 85));
+        bpButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        bpButton.setForeground(new java.awt.Color(255, 255, 204));
         bpButton.setText("Show patients with abnormal blood pressure");
         bpButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -242,6 +250,9 @@ public class StatisticsPanel extends javax.swing.JPanel {
             }
         });
 
+        feverButton.setBackground(new java.awt.Color(38, 55, 85));
+        feverButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        feverButton.setForeground(new java.awt.Color(255, 255, 204));
         feverButton.setText("Show patients with high fever (above 101.1 F)");
         feverButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

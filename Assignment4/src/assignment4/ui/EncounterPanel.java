@@ -28,7 +28,8 @@ public class EncounterPanel extends javax.swing.JPanel {
         for (Patient p: patientDirectory.getPatients()) {
             patientCBox.addItem(p.getPerson().getName());
         }
-        
+        encounterTable.setShowHorizontalLines(true);
+        encounterTable.setShowVerticalLines(true);
     }
 
     /**
@@ -60,6 +61,10 @@ public class EncounterPanel extends javax.swing.JPanel {
         updateButton = new javax.swing.JButton();
         deleteButton = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(253, 253, 223));
+
+        encounterTable.setBackground(new java.awt.Color(253, 253, 223));
+        encounterTable.setBorder(new javax.swing.border.MatteBorder(null));
         encounterTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null},
@@ -114,6 +119,9 @@ public class EncounterPanel extends javax.swing.JPanel {
 
         jLabel7.setText("Blood Oxygen Level");
 
+        addButton.setBackground(new java.awt.Color(38, 55, 85));
+        addButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        addButton.setForeground(new java.awt.Color(255, 255, 204));
         addButton.setText("Add New Encounter");
         addButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,6 +129,9 @@ public class EncounterPanel extends javax.swing.JPanel {
             }
         });
 
+        updateButton.setBackground(new java.awt.Color(38, 55, 85));
+        updateButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        updateButton.setForeground(new java.awt.Color(255, 255, 204));
         updateButton.setText("Update Selected Encounter");
         updateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -128,6 +139,9 @@ public class EncounterPanel extends javax.swing.JPanel {
             }
         });
 
+        deleteButton.setBackground(new java.awt.Color(38, 55, 85));
+        deleteButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        deleteButton.setForeground(new java.awt.Color(255, 255, 204));
         deleteButton.setText("Delete Selected Encounter");
         deleteButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

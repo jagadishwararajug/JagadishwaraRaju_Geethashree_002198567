@@ -76,7 +76,7 @@ public class Person {
     }
 
     public boolean setName(String name) {
-        if (name == null)
+        if (name == null || name.trim().equals(""))
             return false;
         this.name = name;
         return true;

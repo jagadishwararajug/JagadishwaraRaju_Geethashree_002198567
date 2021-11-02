@@ -47,6 +47,9 @@ public class PatientPanel extends javax.swing.JPanel {
         communityCBox.setEditable(true);
 
         showPatientsInTable(system.getPatientDirectory().getPatients());
+        
+        patientTable.setShowHorizontalLines(true);
+        patientTable.setShowVerticalLines(true);
     }
 
     /**
@@ -82,6 +85,9 @@ public class PatientPanel extends javax.swing.JPanel {
         jLabel9 = new javax.swing.JLabel();
         patientIdText = new javax.swing.JTextField();
 
+        setBackground(new java.awt.Color(253, 253, 223));
+
+        patientTable.setBackground(new java.awt.Color(253, 253, 223));
         patientTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
@@ -94,7 +100,7 @@ public class PatientPanel extends javax.swing.JPanel {
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Object.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class
+                java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class
             };
             boolean[] canEdit = new boolean [] {
                 false, false, false, false, false, false
@@ -134,6 +140,9 @@ public class PatientPanel extends javax.swing.JPanel {
 
         stateCBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming" }));
 
+        deleteButton.setBackground(new java.awt.Color(38, 55, 85));
+        deleteButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        deleteButton.setForeground(new java.awt.Color(255, 255, 204));
         deleteButton.setText("Delete Selected Person");
         deleteButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,6 +150,9 @@ public class PatientPanel extends javax.swing.JPanel {
             }
         });
 
+        addButton.setBackground(new java.awt.Color(38, 55, 85));
+        addButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        addButton.setForeground(new java.awt.Color(255, 255, 204));
         addButton.setText("Add New Person");
         addButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -148,6 +160,9 @@ public class PatientPanel extends javax.swing.JPanel {
             }
         });
 
+        updateButton.setBackground(new java.awt.Color(38, 55, 85));
+        updateButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        updateButton.setForeground(new java.awt.Color(255, 255, 204));
         updateButton.setText("Update Selected Person");
         updateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

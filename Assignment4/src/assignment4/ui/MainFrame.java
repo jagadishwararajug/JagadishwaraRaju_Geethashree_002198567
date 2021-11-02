@@ -39,6 +39,11 @@ public class MainFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(253, 253, 223));
+
+        encounterButton.setBackground(new java.awt.Color(38, 55, 85));
+        encounterButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        encounterButton.setForeground(new java.awt.Color(255, 255, 204));
         encounterButton.setText("Manage Encounter");
         encounterButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -46,6 +51,9 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        peopleButton.setBackground(new java.awt.Color(38, 55, 85));
+        peopleButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        peopleButton.setForeground(new java.awt.Color(255, 255, 204));
         peopleButton.setText("Manage Patients");
         peopleButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,6 +61,9 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        statsButton.setBackground(new java.awt.Color(38, 55, 85));
+        statsButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        statsButton.setForeground(new java.awt.Color(255, 255, 204));
         statsButton.setText("Community Stats");
         statsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,6 +92,8 @@ public class MainFrame extends javax.swing.JFrame {
         );
 
         splitPane.setLeftComponent(jPanel1);
+
+        jPanel2.setBackground(new java.awt.Color(253, 253, 223));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
