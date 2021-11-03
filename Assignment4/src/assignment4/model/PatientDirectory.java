@@ -27,7 +27,10 @@ public class PatientDirectory {
     }
     
     public void updatePatient(int index, Patient patient) {
-        patients.set(index, patient);
+        Patient curPatient = patients.get(index);
+        curPatient.setId(patient.getId());
+        curPatient.setPerson(patient.getPerson());
+        //patients.set(index, patient);
     }
     
     public boolean removePatient(Patient patient) {

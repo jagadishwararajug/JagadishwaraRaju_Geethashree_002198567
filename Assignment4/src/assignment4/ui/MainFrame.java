@@ -19,6 +19,7 @@ public class MainFrame extends javax.swing.JFrame {
         initComponents();
         system = new HealthSystem();
         setSize(WIDTH, HEIGHT);
+        splitPane.setRightComponent(new JScrollPane(new WelcomePanel()));
     }
 
     /**

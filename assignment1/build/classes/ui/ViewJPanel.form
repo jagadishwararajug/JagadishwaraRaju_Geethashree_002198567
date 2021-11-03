@@ -147,9 +147,9 @@
                   <Component id="lblCrtLicNum" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="lblVclIdSlNumIncLicPl" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtVclIdSlNumIncLicPl" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtVclIdSlNumIncLicPl" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -167,9 +167,9 @@
                   <Component id="lblIpAdd" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="lblUniqueId" alignment="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtUniqueId" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtUniqueId" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
