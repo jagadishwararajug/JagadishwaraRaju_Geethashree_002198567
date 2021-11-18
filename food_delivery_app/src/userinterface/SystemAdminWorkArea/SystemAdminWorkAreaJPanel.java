@@ -5,9 +5,14 @@
  */
 package userinterface.SystemAdminWorkArea;
 
+import Business.Customer.Customer;
+import Business.DeliveryMan.DeliveryMan;
 import Business.EcoSystem;
 
 import Business.Organization;
+import Business.Restaurant.Restaurant;
+import Business.Role.SystemAdminRole;
+import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.util.ArrayList;
 import javax.swing.JPanel;
@@ -33,10 +38,41 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     }
     
     public void populateTree(){
-        DefaultTreeModel model=(DefaultTreeModel)jTree.getModel();
+        DefaultTreeModel model = (DefaultTreeModel)jTree.getModel();
        // Add the code for draw your system structure shown by JTree
        
+        DefaultMutableTreeNode root = (DefaultMutableTreeNode)model.getRoot();
+        root.removeAllChildren();
+        DefaultMutableTreeNode networks = new DefaultMutableTreeNode("System Admin");
+        root.insert(networks, 0);
+        
+        for(int i=0; i < ecosystem.getUserAccountDirectory().getUserAccountList().size(); i++) {
+            UserAccount ui = ecosystem.getUserAccountDirectory().getUserAccountList().get(i);
+            if (ui.getRole() instanceof SystemAdminRole)
+                networks.add(new DefaultMutableTreeNode(ui.getUsername()));
+        }
+        
+        DefaultMutableTreeNode custList = new DefaultMutableTreeNode("Customer");
+        root.insert(custList, 1);
+        DefaultMutableTreeNode delList  = new DefaultMutableTreeNode("Delivery Men");
+        root.insert(delList, 2);
+        DefaultMutableTreeNode restList = new DefaultMutableTreeNode("Restaurant");
+        root.insert(restList, 3);
+        
+        ArrayList<Customer> customerList = this.ecosystem.getCustomerDirectory().getCustomerList();
+        for(int i = 0; i < customerList.size(); i++)
+            custList.insert(new DefaultMutableTreeNode(customerList.get(i).getName()), i);
+        
+        ArrayList<DeliveryMan> deliveryList = this.ecosystem.getDeliveryManDirectory().getDeliveryManList();
+        for(int i = 0; i < deliveryList.size(); i++)
+            delList.insert(new DefaultMutableTreeNode(deliveryList.get(i).getName()), i);
+              
+        ArrayList<Restaurant> restaurantList = this.ecosystem.getRestaurantDirectory().getRestaurantList();
+        for(int i = 0; i < restaurantList.size(); i++)
+            restList.insert(new DefaultMutableTreeNode(restaurantList.get(i).getName()), i);
+       
         model.reload();
+
     }
     /**
      * This method is called from within the constructor to initialize the form.
