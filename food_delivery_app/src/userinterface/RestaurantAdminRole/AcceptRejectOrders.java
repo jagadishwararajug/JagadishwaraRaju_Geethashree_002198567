@@ -69,9 +69,10 @@ public class AcceptRejectOrders extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         backButton = new javax.swing.JButton();
         ordersCBox = new javax.swing.JComboBox<>();
-        orderDetailsText = new javax.swing.JLabel();
         acceptButton = new javax.swing.JButton();
         rejectButton = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        orderDetailsText = new javax.swing.JTextArea();
 
         setBackground(new java.awt.Color(255, 255, 204));
 
@@ -114,6 +115,10 @@ public class AcceptRejectOrders extends javax.swing.JPanel {
             }
         });
 
+        orderDetailsText.setColumns(20);
+        orderDetailsText.setRows(5);
+        jScrollPane1.setViewportView(orderDetailsText);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -126,17 +131,15 @@ public class AcceptRejectOrders extends javax.swing.JPanel {
                         .addGap(18, 18, 18)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(orderDetailsText))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(28, 28, 28)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(ordersCBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(acceptButton, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(rejectButton, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(ordersCBox, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(287, Short.MAX_VALUE))
+                            .addComponent(jScrollPane1))))
+                .addContainerGap(471, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -148,12 +151,12 @@ public class AcceptRejectOrders extends javax.swing.JPanel {
                 .addGap(28, 28, 28)
                 .addComponent(ordersCBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(orderDetailsText)
-                .addGap(125, 125, 125)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(acceptButton)
                     .addComponent(rejectButton))
-                .addContainerGap(300, Short.MAX_VALUE))
+                .addContainerGap(286, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -202,7 +205,8 @@ public class AcceptRejectOrders extends javax.swing.JPanel {
     private javax.swing.JButton acceptButton;
     private javax.swing.JButton backButton;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel orderDetailsText;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea orderDetailsText;
     private javax.swing.JComboBox<String> ordersCBox;
     private javax.swing.JButton rejectButton;
     // End of variables declaration//GEN-END:variables

@@ -3,7 +3,19 @@ package Business.Restaurant;
 public class MenuItemOrder {
     private MenuItem menuItem;
     private int quantity;
+    private String comments;
 
+    public String getComments() {
+        return comments;
+    }
+
+    public boolean setComments(String comments) {
+        if (comments == null || comments.trim().equals(""))
+            return false;
+        this.comments = comments;
+        return true;
+    }
+    
     public MenuItem getMenuItem() {
         return menuItem;
     }

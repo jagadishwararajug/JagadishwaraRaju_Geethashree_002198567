@@ -11,7 +11,9 @@ import Business.Restaurant.Restaurant;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
+import java.awt.Image;
 import java.util.ArrayList;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -40,6 +42,9 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         workRequestJTable.setShowHorizontalLines(true);
         workRequestJTable.setShowVerticalLines(true);
         populateTable();
+        
+        imageTwo.setIcon(new ImageIcon(new ImageIcon("imgs/del.jpg").getImage(
+                ).getScaledInstance(400, 300, Image.SCALE_DEFAULT)));
     }
     
     private ArrayList<WorkRequest> getAcceptedOrders() {
@@ -84,6 +89,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         assignJButton = new javax.swing.JButton();
         processJButton = new javax.swing.JButton();
         refreshJButton = new javax.swing.JButton();
+        imageTwo = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -128,7 +134,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 assignJButtonActionPerformed(evt);
             }
         });
-        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, 170, -1));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 170, -1));
 
         processJButton.setBackground(new java.awt.Color(0, 0, 51));
         processJButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -139,7 +145,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, 170, -1));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 260, 170, -1));
 
         refreshJButton.setBackground(new java.awt.Color(0, 0, 51));
         refreshJButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -151,6 +157,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 20, -1, -1));
+        add(imageTwo, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 320, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed
@@ -201,6 +208,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton assignJButton;
+    private javax.swing.JLabel imageTwo;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton processJButton;
     private javax.swing.JButton refreshJButton;

@@ -20,7 +20,8 @@ public class Restaurant {
         StringBuilder str = new StringBuilder();
         float total = 0.0f;
         for (MenuItemOrder mi : order) {
-            str.append(mi.getMenuItem().toString() + " x" + mi.getQuantity() + "\n");
+            str.append(mi.getMenuItem().toString() + " x" + mi.getQuantity() 
+                    + " Comments : " + mi.getComments() + "\n");
             total += (mi.getMenuItem().getCost() * mi.getQuantity());
         }
         str.append("Total Bill = $" + total);

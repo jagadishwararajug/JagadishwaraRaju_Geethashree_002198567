@@ -7,6 +7,8 @@ import Business.EcoSystem;
 import Business.Restaurant.Restaurant;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
 public class RestaurantManagerJPanel extends javax.swing.JPanel {
@@ -25,6 +27,8 @@ public class RestaurantManagerJPanel extends javax.swing.JPanel {
         restNameText.setText(rest.getName());
         
         //valueLabel.setText();
+        imageEight.setIcon(new ImageIcon(new ImageIcon("imgs/65430765.jpg").getImage(
+                ).getScaledInstance(600, 400, Image.SCALE_DEFAULT)));
     }
     
     private void nextScreen() {
@@ -46,6 +50,7 @@ public class RestaurantManagerJPanel extends javax.swing.JPanel {
         manageOrdersButton = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
         restNameText = new javax.swing.JLabel();
+        imageEight = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -91,6 +96,7 @@ public class RestaurantManagerJPanel extends javax.swing.JPanel {
         enterpriseLabel.setText("Restaurant :");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 120, 30));
         add(restNameText, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 100, 130, -1));
+        add(imageEight, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 300, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void manageRestInfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageRestInfoButtonActionPerformed
@@ -115,6 +121,7 @@ public class RestaurantManagerJPanel extends javax.swing.JPanel {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel enterpriseLabel;
+    private javax.swing.JLabel imageEight;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JButton manageMenuButton;
     private javax.swing.JButton manageOrdersButton;
