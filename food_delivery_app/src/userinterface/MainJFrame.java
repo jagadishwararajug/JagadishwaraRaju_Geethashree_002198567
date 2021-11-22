@@ -32,8 +32,8 @@ public class MainJFrame extends javax.swing.JFrame {
         initComponents();
         system = dB4OUtil.retrieveSystem();
         this.setSize(1680, 1050);
-         imageOne.setIcon(new ImageIcon(new ImageIcon("imgs/dinner.png").getImage(
-                ).getScaledInstance(700, 500, Image.SCALE_DEFAULT)));
+         imageOne.setIcon(new ImageIcon(new ImageIcon("imgs/dinner.jpg").getImage(
+                ).getScaledInstance(700, 600, Image.SCALE_DEFAULT)));
     }
 
     /**
